@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="billy">
+            <form name="calculadora" class="calculadora">
+                <input type="text" class="text display" name="text1" disabled>
+                <input type="button" class="text1 clear" name="text12" value="C" onclick="location.reload()">
+                <br>
+                <input type="button" class="num symple" name="btn7" value="7" onclick="displaynum(btn7.value)">
+                <input type="button" class="num symple" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                <input type="button" class="num symple" name="btn9" value="9" onclick="displaynum(btn9.value)">
+                <input type="button" class="symbol" name="btnplus" value="+" onclick="displaynum(btnplus.value)">
+                <br>
+                <input type="button" class="num symple" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                <input type="button" class="num symple" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                <input type="button" class="num symple" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                <input type="button" class="symbol" name="btnmois" value="-" onclick="displaynum(btnmois.value)">
+                <br>
+                <input type="button" class="num symple" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                <input type="button" class="num symple" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                <input type="button" class="num symple" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                <input type="button" class="symbol" name="btnfois" value="*" onclick="displaynum(btnfois.value)">
+                <br>
+                <input type="button" class="num symple" name="btnpoint" value="." onclick="displaynum(btnpoint.value)">
+                <input type="button" class="num symple" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                <input type="button" class="symbol" name="btniguale" value="=" onclick="text1.value = eval(text1.value)">
+                <input type="button" class="symbol" name="btndivision" value="/" onclick="displaynum(btndivision.value)">
+                
+
+            </form>
+
+
+        </div>
+    </div>    
+</body>
+    <script src="java.js"> </script>
+</html>
